@@ -79,16 +79,10 @@ Team Members:
 - AI Models: Gemma2, GemmaShield, ElevenLabs, OpenAI
 
 
-
-# 🎥 Demo
-Demo Link: 
-
-# 🔥 Screenshots
-
 # 🔗 Links
 - GitHub Repository: [Github](https://github.com/sophia172/ByteTheNews_Hackthon) 
-- Live Demo: 
-- Presentation Deck: 
+- Live Demo: [video](https://lablab.ai/event/gemma-2-ai-challenge/sweeeeeeet/bytethenews)
+- Presentation Deck: [slides](https://storage.googleapis.com/lablab-static-eu/presentations/submissions/cm45remwp000o3d67histeoui/cm45remwp000o3d67histeoui-1733068749332_z45w7z0har.pdf)
 
 # 💡 Future Enhancements
 - Select voice as male or female as per users preference 
