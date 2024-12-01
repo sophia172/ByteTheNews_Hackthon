@@ -36,14 +36,13 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
    
 # 📑 Run the Extension
    1. Open Chrome browser.
-   2. Click three dots next to your profile picture on the top right.
-   3. Click **Extensions** --> **Manage Extensions**.
-   4. Switch **Developer Mode** to On.
-   5. Press **Load Unpacked** on the top left.
-   6. Choose the **browser_extension** folder located in the project.
-   7. Open a new Chrome Tab and direct to a news page.
-   8. Find the extension and click **Hear Summary**.
-   9. Give it a few seconds as some models are running locally
+   2. Type `chrome://extensions/` in the search bar.
+   3. Switch **Developer Mode** to On.
+   4. Press **Load Unpacked** on the top left.
+   5. Choose the **browser_extension** folder located in the project.
+   6. Open a new Chrome Tab and direct to a news page.
+   7. Find the extension and click **Hear Summary**.
+   8. Give it a few seconds as some models are running locally
 
 
 # 🚀 About the Project
