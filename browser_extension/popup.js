@@ -26,6 +26,7 @@ playPauseButton.addEventListener("click", () => {
     });
 });
 
+
 chrome.runtime.onMessage.addListener((message) => {
     if (message.action === "audioStarted") {
         console.log("Audio has started playing.");

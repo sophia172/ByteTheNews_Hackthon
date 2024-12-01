@@ -25,6 +25,7 @@
         isAudioPlaying = true;
     };
 
+
     const toggleAudioPlayback = () => {
         if (audio) {
             if (audio.paused) {
