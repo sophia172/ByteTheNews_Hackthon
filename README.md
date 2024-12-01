@@ -26,6 +26,8 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
    - `OPENAI_API_KEY`: Your OpenAI API key.
    - `KAGGLE_KEY`: Your Kaggle key for Gemma Access.
    - `KAGGLE_USERNAME`: Your Kaggle Username for Gemma Access.
+   - `HF_ACCESS_TOKEN`: Your HuggingFace token for **google/shieldgemma-2b** access
+   - 
 4. **Run server**:
     ```bash
    python server.py
