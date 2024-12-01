@@ -46,32 +46,30 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
 
 
 # 🚀 About the Project
-- What: ByteTheNews delivers bite-sized reads out summaries of online news stories while you are not looking.
+- **What**: ByteTheNews delivers bite-sized reads out summaries of online news stories while you are not looking.
 
-- Problem it Solves: ByteTheNews addresses the needs of busy professionals with limited time, enhances accessibility for individuals with visual impairments, and provides a screen-free, customizable way to consume news, perfect for unwinding after a long day.
+- **Problem**: ByteTheNews addresses the needs of busy professionals with limited time, enhances accessibility for individuals with visual impairments, and provides a screen-free, customizable way to consume news, perfect for unwinding after a long day.
 
-- Business Impact: With the potential to reach millions of news readers worldwide, ByteTheNews promotes inclusivity and accessibility, creating a positive social impact for diverse audiences.
+- **Business Impact**: With the potential to reach millions of news readers worldwide, ByteTheNews promotes inclusivity and accessibility, creating a positive social impact for diverse audiences.
 
 # 🏆 Hackathon Details
 
-Hackathon Name: Gemma 2 AI Challenge
-Challenge: Build intelligent AI solutions that harness the power of Gemma 2 models to transform processes and enhance productivity.
+- **Hackathon Name**: Gemma 2 AI Challenge
+- **Challenge**: Build intelligent AI solutions that harness the power of Gemma 2 models to transform processes and enhance productivity.
 
 Team Members:
-- Ying Liu - https://github.com/sophia172
-- Joenam Coutinho - https://github.com/joenamcoutinho
-- Tanuj Guha Thakurta - https://github.com/hexcodeblaster
-- Rekha Mathew - https://github.com/RekhaMathew-Product
+- **Ying Liu** - https://github.com/sophia172
+- **Joenam Coutinho** - https://github.com/joenamcoutinho
+- **Tanuj Guha Thakurta** - https://github.com/hexcodeblaster
+- **Rekha Mathew** - https://github.com/RekhaMathew-Product
 
 # 🎯 Key Features
-
-- Feature 1: Text Summariser - Condenses lengthy news articles on your browser into concise, easy-to-digest summaries. 
-
-- Feature 2: Audio Output - Transforms text summaries into natural-sounding audio, at varying speed, while warning the user when the content contains sensitive information. 
-
-- Feature 3: Content Analyzer - Warns the user when the content contains sensitive information before proceeding to reading the summarised news. 
-
-- Feature 4: Web-browser extension -  Easily integrates with your browser with a simple UI that allows users to start and pause audio when needed.  
+- **Article Scraper**: Instantly condenses long news articles from your browser into clear, bite-sized summaries using the Newspaper Python package.
+- **Text Summarizer**: Utilizes the Gemma API through Groq to transform lengthy text into concise, digestible summaries, making news easier to read.
+- **Image Summarizer**: Leverages OpenAI's API to detect and summarize visual content.
+- **Content Analyzer**: Scans and notifies users when sensitive content is present, ensuring they are informed before proceeding with the summarized news, powered by ShieldGemma.
+- **Audio Output**: Converts text summaries into natural-sounding audio using ElevenLab's API, with automatic warnings for sensitive content.
+- **Web Browser Extension**: Seamlessly integrates into your browser with a user-friendly interface, allowing easy control to start, pause, or resume audio.
 
 # 🛠️ Tech Stack
 
