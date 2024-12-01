@@ -56,10 +56,10 @@ Hackathon Name: Gemma 2 AI Challenge
 Challenge: Build intelligent AI solutions that harness the power of Gemma 2 models to transform processes and enhance productivity.
 
 Team Members:
-- Ying Liu - (GitHub or LinkedIn Link)
-- Joenam - (GitHub or LinkedIn Link)
-- Tanuj - (GitHub or LinkedIn Link)
-- Rekha Mathew - (GitHub or LinkedIn Link)
+- Ying Liu - https://github.com/sophia172
+- Joenam Coutinho - https://github.com/joenamcoutinho
+- Tanuj Guha Thakurta - https://github.com/hexcodeblaster
+- Rekha Mathew - https://github.com/RekhaMathew-Product
 
 # 🎯 Key Features
 
@@ -82,13 +82,10 @@ Team Members:
 # 🎥 Demo
 Demo Link: 
 
-# 📖 How to Use
-Provide step-by-step instructions to demonstrate how to use the application.
-
 # 🔥 Screenshots
 
 # 🔗 Links
-- GitHub Repository: [Github](https://github.com/sophia172/Gemma2-Hackthon ) 
+- GitHub Repository: [Github](https://github.com/sophia172/ByteTheNews_Hackthon) 
 - Live Demo: 
 - Presentation Deck: 
 
@@ -97,4 +94,4 @@ Provide step-by-step instructions to demonstrate how to use the application.
 - Implemented on mobile phone device 
 
 # 📧 Contact
-Name - [Email]
+Name - sophia.j.liu@gmail.com
