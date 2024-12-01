@@ -5,7 +5,7 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/llama-hackathon.git
+   git clone https://github.com/yourusername/ByteTheNews_Hackthon
    cd ByteTheNews_Hackathon
    ```
 
