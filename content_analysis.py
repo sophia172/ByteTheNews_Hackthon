@@ -16,11 +16,14 @@ if HF_ACCESS_TOKEN is None:
 
 # Load the tokenizer and model using the access token
 tokenizer = AutoTokenizer.from_pretrained("google/shieldgemma-2b", token=HF_ACCESS_TOKEN)
+device = torch.device("cuda" if torch.cuda.is_available()
+                                   else "mps" if torch.backends.mps.is_available()
+                                   else "cpu")
 model = AutoModelForCausalLM.from_pretrained(
     "google/shieldgemma-2b",
     torch_dtype=torch.float32,  # Use float32 for compatibility
     token=HF_ACCESS_TOKEN  # Pass the token to authenticate
-).to("cpu")  # Use CPU since CUDA is not available
+).to(device)  # Use CPU since CUDA is not available
 
 
 async def check_offensive_content(user_text):
@@ -48,7 +51,7 @@ async def check_offensive_content(user_text):
     """
 
     # Tokenize the prompt
-    inputs = tokenizer(prompt, return_tensors="pt").to("cpu")  # Run on CPU
+    inputs = tokenizer(prompt, return_tensors="pt").to(device)  # Run on CPU
 
     with torch.no_grad():
         logits = model(**inputs).logits
