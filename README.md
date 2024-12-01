@@ -29,9 +29,11 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
    - `HF_ACCESS_TOKEN`: Your HuggingFace token for **google/shieldgemma-2b** access
    - 
 4. **Run server**:
+   Give it some time to download the big ShieldGemma model. If it takes too long, try to rerun the server.py
     ```bash
    python server.py
    ```
+   
 # 📑 Run the Extension
    1. Open Chrome browser.
    2. Click three dots next to your profile picture on the top right.
@@ -41,6 +43,7 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
    6. Choose the **browser_extension** folder located in the project.
    7. Open a new Chrome Tab and direct to a news page.
    8. Find the extension and click **Hear Summary**.
+   9. Give it a few seconds as some models are running locally
 
 
 # 🚀 About the Project
