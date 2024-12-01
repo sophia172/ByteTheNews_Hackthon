@@ -27,7 +27,8 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
    - `KAGGLE_KEY`: Your Kaggle key for Gemma Access.
    - `KAGGLE_USERNAME`: Your Kaggle Username for Gemma Access.
    - `HF_ACCESS_TOKEN`: Your HuggingFace token for **google/shieldgemma-2b** access
-   - 
+   
+
 4. **Run server**:
    Give it some time to download the big ShieldGemma model. If it takes too long, try to rerun the server.py
     ```bash
