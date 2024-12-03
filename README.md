@@ -1,7 +1,7 @@
 # ByteTheNews
 Get bite-sized news summaries of online news stories, read aloud to you, so that you can stay informed on-the-go, save time, save your eyes and never miss out on important updates!
 
-# ⚙️ Installation
+# ⚙️ Installation (If you want to run the server locally)
 
 1. **Clone the Repository**:
    ```bash
@@ -34,6 +34,17 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
     ```bash
    python server.py
    ```
+
+5. **Change the IP address in `content.js`**
+   change address in `fetch` in line 47 from
+   ```python
+   'https://bytethenews.yingliu.site/api/data'
+   ```
+   to 
+
+   ```python
+   'http://localhost:8000/api/data'
+   ```
    
 # 📑 Run the Extension
    1. Open Chrome browser.
@@ -43,7 +54,6 @@ Get bite-sized news summaries of online news stories, read aloud to you, so that
    5. Choose the **browser_extension** folder located in the project.
    6. Open a new Chrome Tab and direct to a news page.
    7. Find the extension and click **Hear Summary**.
-   8. Give it a few seconds as some models are running locally
 
 
 # 🚀 About the Project
