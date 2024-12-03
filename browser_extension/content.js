@@ -44,7 +44,7 @@
         url: pageUrl
     };
 
-    fetch('http://localhost:8000/api/data', {
+    fetch('https://bytethenews.yingliu.site/api/data', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
