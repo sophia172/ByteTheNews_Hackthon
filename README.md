@@ -1,6 +1,9 @@
 # ByteTheNews
 Get bite-sized news summaries of online news stories, read aloud to you, so that you can stay informed on-the-go, save time, save your eyes and never miss out on important updates!
 
+# Draft Location
+[GitHub](https://github.com/sophia172/Gemma2-Hackthon)
+
 # ⚙️ Installation (If you want to run the server locally)
 
 1. **Clone the Repository**:
