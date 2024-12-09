@@ -22,7 +22,7 @@ class URLData(BaseModel):
 async def process_everything(request_data: URLData):
     news_url = request_data.url
     article_extractor = ArticleExtractor()
-    article_summary =await article_extractor(news_url)
+    article_summary = await article_extractor(news_url)
     audio_bytes= await speak(article_summary)
     return StreamingResponse(audio_bytes, media_type="audio/wav")
 

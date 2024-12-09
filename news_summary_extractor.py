@@ -6,7 +6,6 @@ import asyncio
 from text_summary import TextSummary
 from image_summary import ImageSummary
 from logger import logging
-from content_analysis import check_offensive_content
 
 class ArticleExtractor:
     def __init__(self):
@@ -86,12 +85,13 @@ class ArticleExtractor:
             image_summary = await self.image_summariser(self.article_data["main_image"])
             text_summary = await self.text_summariser(f"Text: {self.article.text} \n Image description: {image_summary}")
             logging.info(f"Summary of the full article is: {text_summary}")
-            shield_on = await check_offensive_content(text_summary)
-            logging.info(f"Shield on: {shield_on}")
-            if shield_on is False:
-                return "This news does not contain dangerous content and protected by Gemma Shield: " + text_summary
-            else:
-                return "This news may contain dangerous content: " + text_summary
+            return text_summary
+            # shield_on = await check_offensive_content(text_summary)
+            # logging.info(f"Shield on: {shield_on}")
+            # if shield_on is False:
+            #     return "This news does not contain dangerous content and protected by Gemma Shield: " + text_summary
+            # else:
+            #     return "This news may contain dangerous content: " + text_summary
 
         except Exception as e:
             print(f"Error during Gemma summarization: {e}")
@@ -130,11 +130,5 @@ class ArticleExtractor:
 
 # Main Script
 if __name__ == "__main__":
-    # Replace with your target article URL and Gemma API key
-    url = "https://www.bbc.co.uk/news/articles/c0rgkkpl0dno"
-    gemma_api_key = "AIzaSyCmXk4kUNLC2UriyuYcpkhkT3KoSBf97ts"  # Replace with your actual API key
-
-    extractor = ArticleExtractor()
-    asyncio.run(extractor(url))
 
     print("Article data extracted and saved to article_data_with_summary.json")
