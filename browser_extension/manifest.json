@@ -4,12 +4,10 @@
   "version": "1.0",
   "description": "Gives a summary of the content of the webpage.",
   "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["https://bytethenews.yingliu.site/*"],
+  "js": ["content.js"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
-  },
-  "background": {
-    "service_worker": "background.js"
   }
 }
+
