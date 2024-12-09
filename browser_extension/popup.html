@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Controller</title>
+    <title>ByteTheNews</title>
     <!-- Link to Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMl4L/7FfDQjO/jYkYZzJt4VI4h/2CGciTuTmjq" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,13 +18,11 @@
             max-width: 300px;
             height: auto;
         }
-
         h1 {
             font-size: 20px;
             color: #333;
             margin-bottom: 20px;
         }
-
         button {
             border: none;
             padding: 10px 20px;
@@ -34,26 +32,21 @@
             border-radius: 8px;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-
         button:hover {
             transform: scale(1.1);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
         }
-
         #extract {
             background-color: #007bff;
             color: white;
         }
-
         #playPause {
             background-color: #28a745;
             color: white;
         }
-
         .icon {
             margin-right: 10px;
         }
-
         button:focus {
             outline: none;
         }
@@ -64,10 +57,9 @@
     <button id="extract">
         <i class="fas fa-download icon"></i> Hear Summary
     </button>
-    <button id="playPause">
+    <button id="playPause" hidden>
         <i id="playPauseIcon" class="fas fa-pause icon"></i> Pause
     </button>
     <script src="popup.js"></script>
 </body>
 </html>
-

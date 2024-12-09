@@ -1,69 +1,66 @@
 (() => {
+    let audio = null;
+    let isPlaying = false;
 
-    let audio = null; 
-
-    const playAudio = (audioBlob) => {      
+    const playAudio = (audioBlob) => {
         const audioUrl = URL.createObjectURL(audioBlob);
         if (audio) {
             audio.pause();
             audio.currentTime = 0;
-            audio.src = ""; 
+            audio.src = "";
             audio = null;
         }
         audio = new Audio(audioUrl);
         audio.addEventListener("ended", () => {
-            console.log("Audio playback completed.");
-            isAudioPlaying = false; 
+            isPlaying = false;
             chrome.runtime.sendMessage({ action: "audioCompleted" });
         });
         audio.addEventListener("play", () => {
-            console.log("Audio playback started.");
-            isAudioPlaying = true; 
+            isPlaying = true;
             chrome.runtime.sendMessage({ action: "audioStarted" });
         });
         audio.play();
-        isAudioPlaying = true;
     };
-
 
     const toggleAudioPlayback = () => {
         if (audio) {
             if (audio.paused) {
                 audio.play();
+                isPlaying = true;
             } else {
                 audio.pause();
+                isPlaying = false;
             }
         } else {
             console.log("No audio loaded yet.");
         }
+        return isPlaying;
     };
 
     const pageUrl = window.location.href;
 
-    const extractedData = {
-        url: pageUrl
-    };
-
-    fetch('https://bytethenews.yingliu.site/api/data', {
+    fetch("https://bytethenews.yingliu.site/api/data", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
         },
-        body: JSON.stringify(extractedData)
+        body: JSON.stringify({ url: pageUrl }),
     })
-    .then(async (response) => {
-        if (!response.ok) {
-            throw new Error(`API error: ${response.statusText}`);
-        }
-        
-        audioBlob = await response.blob();
-        playAudio(audioBlob); 
-    })
-    .catch(error => console.error("API error:", error));
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`API error: ${response.statusText}`);
+            }
+            return response.blob();
+        })
+        .then((audioBlob) => {
+            playAudio(audioBlob);
+        })
+        .catch((error) => console.error("API error:", error));
 
-    chrome.runtime.onMessage.addListener((message) => {
+    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.action === "toggleAudio") {
-            toggleAudioPlayback();
+            const currentPlayingState = toggleAudioPlayback();
+            sendResponse({ isPlaying: currentPlayingState });
         }
     });
 })();
